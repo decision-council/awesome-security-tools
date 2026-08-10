@@ -1,19 +1,47 @@
-# OSC Technical Standards & Methodologies
+# Awesome Security Tools — OSC
 
-Este repositorio centraliza las metodologías técnicas utilizadas por **Open Security Collective** para garantizar auditorías precisas, repetibles y éticas.
+Lista curada de **herramientas de seguridad de código abierto** (y versiones licenciadas legítimas) avaladas o recomendadas por **Open Security Collective** para auditorías éticas.
 
-## Marcos de Referencia (Frameworks)
-Nuestras pruebas se basan en estándares internacionales adaptados a nuestro flujo de trabajo:
-* **Web:** Basado en OWASP Top 10 y WSTG.
-* **Redes:** Siguiendo lineamientos de OSSTMM.
-* **Reporte:** Clasificación de severidad mediante CVSS v3.1/v4.0.
+> Las metodologías y fases de trabajo están en [standards](https://github.com/opensecuritycollective/standards). Este repo solo lista herramientas.
 
-## Metodologías Disponibles
-1. [Metodología de Reconocimiento (OSINT)](./RECON.md)
-2. [Auditoría de Aplicaciones Web](./WEB.md)
-3. [Seguridad en Infraestructura y Redes](./INFRA.md)
+## Principios de selección
 
-# Proximamente mas metodologías
----
-## Herramientas Avaladas
-Para mantener la integridad de los resultados, los investigadores de OSC deben priorizar el uso de herramientas de código abierto o versiones licenciadas. El uso de software "crackeado" está estrictamente prohibido en las operaciones oficiales del colectivo.
+* Preferencia por software OSS o licencias comerciales legítimas.
+* Prohibido el uso de software “crackeado” en operaciones oficiales de OSC.
+* Toda herramienta se usa **solo** dentro de alcance autorizado.
+
+## Análisis web
+
+* [OWASP ZAP](https://www.zaproxy.org/) — proxy de pruebas de seguridad web
+* [Burp Suite](https://portswigger.net/burp) — plataforma de testing web (Community/Pro)
+* [ffuf](https://github.com/ffuf/ffuf) — fuzzer web rápido
+* [sqlmap](https://sqlmap.org/) — detección/explotación de SQLi (uso autorizado)
+
+## Escaneo de red e infra
+
+* [Nmap](https://nmap.org/) — descubrimiento y auditoría de red
+* [Masscan](https://github.com/robertdavidgraham/masscan) — escaneo masivo de puertos
+* [RustScan](https://github.com/RustScan/RustScan) — escaneo de puertos rápido
+* [Nuclei](https://github.com/projectdiscovery/nuclei) — escaneo basado en templates
+
+## OSINT
+
+* [Amass](https://github.com/owasp-amass/amass) — enumeración de superficie de ataque
+* [theHarvester](https://github.com/laramies/theHarvester) — recolección OSINT
+* [Shodan](https://www.shodan.io/) / [Censys](https://censys.io/) — buscadores de dispositivos/exposición (APIs legítimas)
+* [Maltego](https://www.maltego.com/) — grafos de inteligencia (según licencia)
+
+## Severidad y reporte
+
+* [cvss-calculator](https://github.com/opensecuritycollective/cvss-calculator) — CVSS v3.1 (OSC)
+* [vulnera-calc](https://github.com/opensecuritycollective/vulnera-calc) — modelo de 7 ejes (OSC)
+
+## Cómo proponer una herramienta
+
+1. Abre un issue o PR con: nombre, URL, licencia, categoría y justificación ética/técnica.
+2. Confirma que no requiere software ilegal ni bypasa controles sin autorización.
+3. Sigue el [Código de conducta](https://github.com/opensecuritycollective/.github/blob/main/CODE_OF_CONDUCT.md).
+
+## Licencia
+
+Contenido de esta lista: [Apache License 2.0](./LICENSE). Las herramientas enlazadas conservan sus propias licencias.
