@@ -16,6 +16,7 @@ Lista curada de **herramientas de seguridad de código abierto** (y versiones li
 * [Burp Suite](https://portswigger.net/burp) — plataforma de testing web (Community/Pro)
 * [ffuf](https://github.com/ffuf/ffuf) — fuzzer web rápido
 * [sqlmap](https://sqlmap.org/) — detección/explotación de SQLi (uso autorizado)
+* [KeyDrift](https://keydrift.dev) — Scans deployed HTML and JavaScript for exposed secrets while recognizing public browser credentials that should not be treated as leaks.
 
 ## Escaneo de red e infra
 
